@@ -21,6 +21,26 @@ it shows:
 - how up-to-date you are, compared to the "upstream" server (usually named "origin"): commits only you have, and commits only they have.
 
 
+=== git clone OTHER_REPO ===
+Make a local copy of OTHER_REPO.
+OTHER_REPO can be:
+- a ssh location: user@host:/path/to/repo_root
+- a http location: https://github.com/juleskers/git-playground
+- a local directory: ../../other_project
+
+Git will remember which OTHER_REPO you cloned, and keep a reference to it under name "origin"
+
+
+=== git fetch ===
+Get all the latest changes from OTHER_REPO "origin", but keep the current state unchanged.
+This gets all the changes and new branches from upstream, so that you can look at them when you want.
+
+
+=== git pull ===
+Update the currently checked-out branch with the latest changes from OTHER_REPO "origin",
+and checkout the new state if there are no conflicting changes.
+
+
 === git add files... ===
 Tells git to start caring about a file and it's changes.
 In effect, it "stages" the changes in the file(s), telling git "next time I'm making a commit, include these changes"
