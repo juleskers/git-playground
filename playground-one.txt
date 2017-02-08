@@ -10,3 +10,9 @@ This is our awesome GIT playground!
 4) check if it worked with `git status` and `git log`, does your commit show up?
 5) push your result back to the central repo: ` git push `
 
+
+== List of awesome people who learned something today ==
+* Jules Kerssemakers
+
+
+== The end, thank you for participating! ==
