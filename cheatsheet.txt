@@ -53,7 +53,10 @@ throw it in the trash, just like normal `rm`
 With the added benefit that git will display it more nicely.
 Rule of thumb: never use the "normal" `rm` in a git-controlled directory, always `git rm`
 
-The deletion is performed, and staged, but not yet committed; always do a commit after a `git rm`
+The deletion is performed, and staged, but not yet committed;
+Probably other files need to be updated to handle the suddenly-missing files; also make the necessary changes,
+and then do a single commit of removed-file + all required fixes.
+
 
 === git commit ===
 Actually save the staged changes. Like Ctrl+S / Save as..
