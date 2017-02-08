@@ -17,3 +17,55 @@ This is our awesome GIT playground!
 
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
+
+
+== List of useful git commands ==
+=== git init ===
+Start a new, virgin repo in any folder.
+git init save/commit/do anything yet, it just creates the blank sheet of 'paper' to start writing on.
+
+The folder can either be a new one you just made with mkdir, or a project folder that has a bazillion little files.
+(A lot of my workspaces have a first commit that reads "Time to (finally) bring this under version control", which adds a few dozens files.)
+
+=== git status ===
+answers "Where  was I?"
+it shows:
+- which files/folders have "untracked changes" (stuff git doesn't care about yet)
+- which files/folders have "unstaged changes"  (files under version control, with changes, but not yet scheduled to commit)
+- which files/folders have "staged changes"    (changes that will be commited the next time you do "git commit"
+- how up-to-date you are, compared to the "upstream" server (usually named "origin"): commits only you have, and commits only they have.
+
+
+=== git add files... ===
+Tells git to start caring about a file and it's changes.
+In effect, it "stages" the changes in the file(s), telling git "next time I'm making a commit, include these changes"
+For files with changes (tracked, "modified files"), all changes are staged (for staging sub-sets of a file, see `git gui`, and `git add --interactive`)
+
+`git add`-ing "Untracked" (new) files has the side-effect that git will _keep_ caring about the file in the future
+
+=== git rm ===
+throw it in the trash, just like normal `rm`
+With the added benefit that git will display it more nicely.
+Rule of thumb: never use the "normal" `rm` in a git-controlled directory, always `git rm`
+
+The deletion is performed, and staged, but not yet committed; always do a commit after a `git rm`
+
+=== git commit ===
+Actually save the staged changes. Like Ctrl+S / Save as..
+Until you have typed this, your "index" (staged changes) are flexible, changeable, like soft clay.
+`git commit` bakes this soft clay into a hard piece of stone, that will survive for two-thousand years, 
+just like those clay tablets from Mesopotamia.
+
+Options:
+-a : shortcut to add all "tracked" files with changes, saves you having to type "git add" before every commit. 
+     Untracked (new) files are ignored by this shortcut, use a full `git add` for them
+-m : shortcut to type the commit message on the command line. Useful for shorter messages
+     if you leave it out, git will open your $EDITOR for you, to type a proper commit message.
+
+=== git log ===
+list the history of your repository, from right-now all the way back to the birth-times.
+
+(like "Gimli son of Glóin son of Gróin son of Farin son of Borin son of Nain II 
+son of Óin son of Glóin son of Thorin I son of Thráin son of Náin I son of Durin VI 
+son of Durin the Deathless, First of the Seven Fathers of Dwarves")
+
