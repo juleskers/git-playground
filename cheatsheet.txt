@@ -137,3 +137,24 @@ to this:
                             /
                D---E---F---G <= OTHERBRANCH
 
+=== git reset PREVIOUS_STATE ===
+Undoes history, pretending that everything since commit PREVIOUS_STATE has never been commited.
+The files themselves will not change, git will just forget all the changes, so that you can re-commit them.
+
+WARNING: Never do this on changes you have already shared with others (`git push`, others doing `git pull` on you).
+As with all forms of time-travel, everyone involved quickly gets headaches if their versions of history doesn't add up.
+(It's possible, but requires very careful communication and coordination with all other copies.
+This added effort is usually not worth it, just do a normal merge instead.)
+
+Options:
+--hard : DANGEROUS: git reverts all files to state PREVIOUS_STATE, throwing away EVERYTHING else.
+         You usually don't want this, so think again what you are doing.
+         This option WILL throw away your work, both saved and unsaved changes, regardless of committed or not.
+         so be very CAREFUL to always have a clean working directory before you use this.
+         (even if it is just `git commit -am "save everything before doing a reset, fingers crossed..."
+
+
+=== ADVANCED: git reflog ===
+The secret history of git: all previous commits, including obsolete ones like the state before a reset, or the non-rebased versions of a rebase.
+Unless you KNOW what you are doing, toying with this will ruin your day.
+The reflog allows git guru's to recover your precious work after you messed with the wrong merge, rebase or reset switches.
