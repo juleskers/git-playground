@@ -104,3 +104,33 @@ Very useful if you did multiple things in one go, but want to save them as separ
 === gitk ===
 (separate package, needs to be installed explicitly)
 opens a visual tree-view showing how all the branches are related to eachother.
+
+=== git merge OTHER_BRANCH ===
+Joins two branches together.
+
+Repeats the changes from OTHER_BRANCH on the currently checked out branch.
+All the changes from the other branch will be plonked in as one big, combined change.
+Both branches must share some common point in history somewhere in their past. (i.e. you can't merge in a completely different project)
+
+WARNING: to prevent head-aches and non-undo-able changes, ALWAYS make sure you have a clean working directory before doing a merge.
+(i.e. do a final pre-merge commit, make sure you have no uncommitted changes with `git status`, and only then do `git merge`)
+
+Options:
+--ff-only : attempt a "fast-forward": only repeat the changes if one of the branches hasn't changed since the diverging point.
+  This effectively makes a branch-identifier somewhere earlier in (non-diverging) history point at the current situation, without adding any changes.
+
+=== git rebase OTHERBRANCH ===
+repeats the changes in the currently checked-out branch on top of the changes in UPSTREAM.
+This allows you to pretend your work happened 'after' work on OTHERBRANCH, instead of in parallel to it.
+Using this regularly in between your work means you have easier merges at the end, and sometimes even removes the need for merges entirely.
+
+Extracted from the git-help:
+Goes from this:
+                     A---B---C <= CURRENT_BRANCH
+                    /
+               D---E---F---G <= OTHERBRANCH
+to this:
+                             A'--B'--C' <= CURRENT_BRANCH
+                            /
+               D---E---F---G <= OTHERBRANCH
+
