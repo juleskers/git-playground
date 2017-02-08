@@ -5,7 +5,7 @@ This is our awesome GIT playground!
 2) Then save
 3) then from the command line, commit with:
    ` git commit -am "I just made my first git commit" `
-     '-a' means "add all changes"
+     '-a' means "add all changes to the list-of-things-to-commit (the 'index')"
      '-m' means "use this as a commit message"
 4) check if it worked with `git status` and `git log`, does your commit show up?
 5) push your result back to the central repo: ` git push `
