@@ -54,3 +54,33 @@ list the history of your repository, from right-now all the way back to the birt
 son of Óin son of Glóin son of Thorin I son of Thráin son of Náin I son of Durin VI 
 son of Durin the Deathless, First of the Seven Fathers of Dwarves")
 
+=== git checkout [GIT_REF] ===
+"opens" the specified state.
+A GIT_REF is either a branch-name, a commit ID, or a relative indicator (e.g. "HEAD^^^": the commit three steps before the current position)
+If GIT_REF is empty, checks out the current state, i.e. (mostly) a no-op, but see -b.
+
+Options:
+-b NEW_BRANCH_NAME: checkout the specified GIT_REF (which may be empty, i.e. "the current state"), and
+     start a new branch called "NEW_BRANCH_NAME" at that point, and switch to it.
+     useful to start a new branch, e.g. `git checkout -b my-new-branch-to-test-something-real-quick`
+
+Special behaviour:
+`git checkout file-with-staged-changes` un-stages the changes; the file will not be changed, but git will remove the changes from its
+"include this in next commit" list (a.k.a the "index").
+
+=== git branch ===
+without any further options, just lists all the available branches.
+
+Options:
+-d BRANCH_NAME... : delete the specified branch(es). Be careful you don't throw anything away that wasn't merged yet.
+
+=== git gui ===
+Opens a graphical interface, allowing you to stage/unstage/commit in more detail.
+The gui allows you to select entire blocks (called "hunks") of changes, or single lines at a time.
+staged changes can be unstaged in the same way
+Very useful if you did multiple things in one go, but want to save them as separate commits
+(e.g. a new feature, and a related bugfix in the old code you were re-using.)
+
+=== gitk ===
+(separate package, needs to be installed explicitly)
+opens a visual tree-view showing how all the branches are related to eachother.
