@@ -1,6 +1,10 @@
 == List of useful git commands ==
 A cheat-sheet to keep under your pillow / tape to your wall
 
+=== git help SUBCOMMAND ===
+Opens the man-page of the subcommand.
+If subcommand is empty, shows the possible subcommands.
+
 === git init ===
 Start a new, virgin repo in any folder.
 git init save/commit/do anything yet, it just creates the blank sheet of 'paper' to start writing on.
