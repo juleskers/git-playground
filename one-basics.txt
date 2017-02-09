@@ -14,7 +14,7 @@ This is our non-scientific GIT playground!
 == List of awesome people who learned something today ==
 * Jules Kerssemakers
 * Canasian
-
+* vinjana
 
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
