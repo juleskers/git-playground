@@ -13,7 +13,7 @@ This is our awesome GIT playground!
 
 == List of awesome people who learned something today ==
 * Jules Kerssemakers
-
+* Nils Kurzawa
 
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
