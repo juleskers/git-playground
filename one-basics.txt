@@ -1,4 +1,4 @@
-This is our awesome GIT playground!
+This is our non-scientific GIT playground!
 
 == Assignment one ==
 1) Please add your name in the list below!
@@ -13,6 +13,7 @@ This is our awesome GIT playground!
 
 == List of awesome people who learned something today ==
 * Jules Kerssemakers
+* Canasian
 
 
 == The end, thank you for participating! ==
