@@ -93,6 +93,7 @@ Special behaviour:
 
 === git branch ===
 without any further options, just lists all the available branches.
+To create branches, use `git checkout -b <new-branch-name>`
 
 Options:
 -d BRANCH_NAME... : delete the specified branch(es). Be careful you don't throw anything away that wasn't merged yet.
