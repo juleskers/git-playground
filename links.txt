@@ -1,0 +1,32 @@
+Useful links:
+
+=== Gitk ===
+gui for branches and history
+
+https://git-scm.com/docs/gitk
+
+zypper install gitk
+apt-get install gitk
+
+=== Git Gui ===
+
+visually add files and make commits.
+Intuitive way to include only specific 
+
+zypper install git-gui
+apt-get install git-gui
+
+=== Eilslabs repo's ===
+
+There are currently two main Git-repo's in use in the eilslabs.
+Both provide similar features, and 
+
+Phabricator
+Operated by Johannes, used by CO + CRG
+https://eilslabs-phabricator.dkfz.de
+
+Operated by eilslabs admin-team, used by DMG + Admins
+Daily backups!
+https://tbi-gitlab.dkfz.de/
+
+
