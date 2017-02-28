@@ -17,6 +17,7 @@ This is our Awesome GIT playground!
 * Nils Kurzawa
 * vinjana
 * Stefan
+* Calvin
 
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
