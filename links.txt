@@ -1,5 +1,11 @@
 Useful links:
 
+=== Links for this repo ===
+el GitLab:      git clone git@tbi-gitlab.dkfz.de:kerssema/git-playground.git
+                git clone https://tbi-gitlab.dkfz.de/kerssema/git-playground.git
+el Phabricator: git clone https://eilslabs-phabricator.dkfz.de/diffusion/PLAY/git-playground.git
+public github:  git clone https://github.com/juleskers/git-playground.git
+
 === Gitk ===
 gui for branches and history
 
