@@ -16,6 +16,16 @@ Intuitive way to include only specific
 zypper install git-gui
 apt-get install git-gui
 
+==== gitless ===
+Simplified git interface.
+Based on studies in interaction design.
+Uses git under the hood, but renames and condenses
+some concepts to be easier to understand.
+
+Fully compatible with 'normal' git.
+
+http://gitless.com/
+
 === Eilslabs repo's ===
 
 There are currently two main Git-repo's in use in the eilslabs.
