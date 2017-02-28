@@ -35,3 +35,5 @@ This is our Awesome GIT playground!
 >>>>>>> bad3c7c82dfa36ee96867c1925bf99ec74a87f43
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
+
+unfortunately too slow...
