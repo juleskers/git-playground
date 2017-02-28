@@ -16,6 +16,6 @@ This is our Awesome GIT playground!
 * Canasian
 * Nils Kurzawa
 * vinjana
-
+* Schneemann
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
