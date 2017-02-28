@@ -16,7 +16,11 @@ This is our Awesome GIT playground!
 * Canasian
 * Nils Kurzawa
 * vinjana
+<<<<<<< HEAD
 * qiangyu
+=======
+* Calvin
+>>>>>>> bcd6eec7d7129f0faed86be7473fd24e52656971
 
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
