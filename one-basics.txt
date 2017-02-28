@@ -17,8 +17,12 @@ This is our Awesome GIT playground!
 * Nils Kurzawa
 * vinjana
 <<<<<<< HEAD
-* qiangyu
+<<<<<<< HEAD
+* qiangyu: I am so smart!!!
 =======
+=======
+* Stefan
+>>>>>>> d6501def42b575cd319b164f798d950662385aff
 * Calvin
 >>>>>>> bcd6eec7d7129f0faed86be7473fd24e52656971
 
