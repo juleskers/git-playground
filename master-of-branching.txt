@@ -1,0 +1,10 @@
+=== Masters of Branching ===
+
+In this file, we document those worthy souls
+who have grasped the arcane rituals of 
+
+`git branch` and `git checkout BRANCHNAME`
+
+==== Masters of Branching ====
+* Jules Kerssemakers
+* Johannes Werner
