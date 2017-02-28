@@ -18,13 +18,20 @@ This is our Awesome GIT playground!
 * vinjana
 <<<<<<< HEAD
 <<<<<<< HEAD
-* qiangyu: I am so smart!!!
+<<<<<<< HEAD
+* qiangyu: I like git again!!!
 =======
 =======
+=======
+* Schneemann
+>>>>>>> bad3c7c82dfa36ee96867c1925bf99ec74a87f43
 * Stefan
 >>>>>>> d6501def42b575cd319b164f798d950662385aff
 * Calvin
+<<<<<<< HEAD
 >>>>>>> bcd6eec7d7129f0faed86be7473fd24e52656971
 
+=======
+>>>>>>> bad3c7c82dfa36ee96867c1925bf99ec74a87f43
 == The end, thank you for participating! ==
 (Feel free to continue with exercise two, SSH keys)
